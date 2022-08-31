@@ -343,7 +343,7 @@ section.contact form input:not(.btn):focus {
 }
 
 section.testimonials .splide__slide {
-  height: 200px;
+  height: 280px;
   width: 33.33%;
   padding: 20px;
   display: flex;
@@ -375,6 +375,65 @@ section.testimonials .splide__slide blockquote header .metadata time {
 }
 section.testimonials button.splide__arrow {
   top: 65% !important;
+}
+
+#footer {
+  position: relative;
+  margin-top: 100px;
+  color: white;
+  padding-top: 100px;
+}
+#footer a {
+  color: #eec163;
+}
+#footer a:hover {
+  opacity: 0.5;
+}
+#footer .bg-wrapper img {
+  opacity: 1;
+}
+#footer .widgets {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#footer .widgets .left, #footer .widgets .right {
+  width: 45%;
+}
+#footer .widgets .left .menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer .widgets .left .menu ul li {
+  list-style: none;
+}
+#footer .widgets .left .menu ul li a {
+  text-transform: uppercase;
+  padding: 5px 10px;
+  display: inline-block;
+  transition-duration: 0.3s;
+  font-weight: bold;
+}
+#footer .widgets .left address {
+  text-align: center;
+}
+#footer .widgets .left address a {
+  display: block;
+}
+#footer .widgets .right .hours {
+  width: 400px;
+}
+#footer .widgets .right .hours th {
+  text-align: left;
+}
+#footer small {
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */

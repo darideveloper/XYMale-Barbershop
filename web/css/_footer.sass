@@ -1,0 +1,62 @@
+#footer
+    position: relative
+    margin-top: 100px
+    color: white
+    padding-top: 100px
+
+    a
+        color: $color-c
+
+        &:hover
+            opacity: 0.5
+
+    .bg-wrapper
+        img
+            opacity: 1
+
+    .widgets
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+
+        .left, .right
+            width: 45%
+
+        .left
+            .menu
+                ul
+                    margin: 0
+                    padding: 0
+                    display: flex
+                    align-items: center
+                    justify-content: center
+
+                    li
+                        list-style: none
+
+                        a
+                            text-transform: uppercase
+                            padding: 5px 10px
+                            display: inline-block
+                            transition-duration: $transition-duration
+                            font-weight: bold
+
+            address
+                text-align: center
+                a
+                    display: block
+
+        .right
+            .hours
+                width: 400px
+
+                th
+                    text-align: left
+
+    small
+        text-align: center
+        display: block
+        width: 100%
+        margin-top: 40px
+
+            
