@@ -50,7 +50,7 @@
         </symbol>
     </svg>
 
-    <header class="full-width">
+    <header class="full-width" id="header">
         <div class="content regular-width">
             <a class="logo" href="#about">
                 <img src="./imgs/logo.png" alt="XYmale Barbershop Logo">
@@ -142,7 +142,7 @@
                     </li>
                     <li class="splide__slide">
                         <img src="./imgs/gallery_8.jpg" alt="gallery image">
-                    </li>g
+                    </li>
                     <li class="splide__slide">
                         <img src="./imgs/gallery_9.jpg" alt="gallery image">
                     </li>
@@ -203,7 +203,93 @@
             </form>
         </section>
 
-        <section class="testimonials regular-width" id="testimonials"></section>
+        <section class="testimonials regular-width splide" id="testimonials">
+            <h2>Testimonials</h2>
+            <div class="separator"></div>
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <blockquote>
+                            <header>
+                                <img src="./imgs/testimonial_1.jpg" alt="profile image Bryan R" class="profile">
+                                <div class="metadata">
+                                    <cite class="name">Bryan R</cite>
+                                    <time datetime="2022-08-15">Aug 15, 2022</time>
+                                </div>
+                            </header>
+                            Elizabeth T
+                            Excellent cut and advice!!
+                        </blockquote>
+                    </li>
+                    <li class="splide__slide">
+                        <blockquote>
+                            <header>
+                                <img src="./imgs/testimonial_2.jpg" alt="profile image Marc C" class="profile">
+                                <div class="metadata">
+                                    <cite class="name">Marc C</cite>
+                                    <time datetime="2022-08-11">Aug 13, 2022</time>
+                                </div>
+                            </header>
+                            It took me months to find a good quality barber and I found the best.
+                            Elizabeth T
+                            I won’t ever go to another barber but if I do I will already be disappointed.
+                        </blockquote>
+                    </li>
+                    <li class="splide__slide">
+                        <blockquote>
+                            <header>
+                                <img src="./imgs/testimonial_3.jpg" alt="profile image Paul K" class="profile">
+                                <div class="metadata">
+                                    <cite class="name">Paul K</cite>
+                                    <time datetime="2022-08-11">Aug 11, 2022</time>
+                                </div>
+                            </header>
+                            Tina Rogers
+                            Perfect haircut and awesome personality
+                        </blockquote>
+                    </li>
+                    <li class="splide__slide">
+                        <blockquote>
+                            <header>
+                                <img src="./imgs/testimonial_4.jpg" alt="profile image Bob D" class="profile">
+                                <div class="metadata">
+                                    <cite class="name">Bob D</cite>
+                                    <time datetime="2022-08-11">Aug 11, 2022</time>
+                                </div>
+                            </header>
+                            Vanessa (Shiny) Kelley
+                            The best
+                        </blockquote>
+                    </li>
+                    <li class="splide__slide">
+                        <blockquote>
+                            <header>
+                                <img src="./imgs/testimonial_5.jpg" alt="profile image Alex C" class="profile">
+                                <div class="metadata">
+                                    <cite class="name">Alex C</cite>
+                                    <time datetime="2022-08-09">Aug 9, 2022</time>
+                                </div>
+                            </header>
+                            Vanessa (Shiny) Kelley
+                            Great and professional
+                        </blockquote>
+                    </li>
+                    <li class="splide__slide">
+                        <blockquote>
+                            <header>
+                                <img src="./imgs/testimonial_6.jpg" alt="profile image Patrick M" class="profile">
+                                <div class="metadata">
+                                    <cite class="name">Patrick M</cite>
+                                    <time datetime="2022-08-06">Aug 6, 2022</time>
+                                </div>
+                            </header>
+                            Elizabeth T
+                            Outstanding
+                        </blockquote>
+                    </li>
+                </ul>
+          </div>
+        </section>
 
     </main>
     <footer class="regular-width"></footer>
@@ -216,13 +302,21 @@
     <!-- Slider -->
     <script src="./code/splide.min.js"></script>
     <script>
-        var splide = new Splide( '.splide', {
+        var splide_gallery = new Splide( '#gallery', {
             type   : 'loop',
             perPage: 3,
             perMove: 1,
         } );
         
-        splide.mount();
+        splide_gallery.mount();
+
+        var splide_testimonials = new Splide( '#testimonials', {
+            type   : 'loop',
+            perPage: 3,
+            perMove: 1,
+        } );
+        
+        splide_testimonials.mount();
     </script>
 </body>
 </html>

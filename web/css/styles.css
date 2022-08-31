@@ -127,7 +127,7 @@ h2 {
   box-shadow: 2px 2px 6px black;
 }
 
-header {
+#header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,35 +140,35 @@ header {
   width: 100%;
   transition-duration: 0.3s;
 }
-header.scroll {
+#header.scroll {
   height: 40px;
 }
-header.scroll .content .logo {
+#header.scroll .content .logo {
   height: 40px;
 }
-header.scroll .btn.cta.phantom {
+#header.scroll .btn.cta.phantom {
   padding: 5px 20px;
 }
-header .content {
+#header .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header .content .logo {
+#header .content .logo {
   height: 80px;
   width: auto;
   transition-duration: 0.3s;
 }
-header .content .logo img {
+#header .content .logo img {
   height: 100%;
   width: auto;
   filter: invert(1);
 }
-header .content nav {
+#header .content nav {
   margin: 0;
   padding: 0;
 }
-header .content nav ul {
+#header .content nav ul {
   margin: 0;
   padding: 0;
   margin-left: 50px;
@@ -176,24 +176,24 @@ header .content nav ul {
   align-items: center;
   justify-content: center;
 }
-header .content nav ul li {
+#header .content nav ul li {
   list-style: none;
 }
-header .content nav ul li a {
+#header .content nav ul li a {
   margin-left: 15px;
   display: inline-block;
   font-size: 14px;
   transition-duration: 0.3s;
   color: #fff;
 }
-header .content nav ul li a:not(.cta) {
+#header .content nav ul li a:not(.cta) {
   padding: 5px;
   border-bottom: 2px solid rgba(238, 193, 99, 0);
 }
-header .content nav ul li a:hover {
+#header .content nav ul li a:hover {
   border-bottom: 2px solid #eec163;
 }
-header .content button.btn.display {
+#header .content button.btn.display {
   display: none;
 }
 
@@ -340,6 +340,41 @@ section.contact form input:not(.btn) {
 }
 section.contact form input:not(.btn):focus {
   box-shadow: 2px 2px 6px #000000;
+}
+
+section.testimonials .splide__slide {
+  height: 200px;
+  width: 33.33%;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+section.testimonials .splide__slide blockquote header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+section.testimonials .splide__slide blockquote header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+section.testimonials .splide__slide blockquote header .metadata {
+  display: flex;
+  flex-direction: column;
+}
+section.testimonials .splide__slide blockquote header .metadata .name {
+  font-weight: bold;
+}
+section.testimonials .splide__slide blockquote header .metadata time {
+  font-style: italic;
+  font-size: 14px;
+}
+section.testimonials button.splide__arrow {
+  top: 65% !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
