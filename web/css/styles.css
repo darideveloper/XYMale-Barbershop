@@ -113,9 +113,19 @@ header {
   left: 0;
   z-index: 1;
   background: rgba(0, 0, 0, 0.6);
-  height: 60px;
+  height: 80px;
   position: fixed;
   width: 100%;
+  transition-duration: 0.3s;
+}
+header.scroll {
+  height: 40px;
+}
+header.scroll .content .logo {
+  height: 40px;
+}
+header.scroll .btn.cta.phantom {
+  padding: 5px 20px;
 }
 header .content {
   display: flex;
@@ -123,8 +133,9 @@ header .content {
   justify-content: space-between;
 }
 header .content .logo {
-  height: 60px;
+  height: 80px;
   width: auto;
+  transition-duration: 0.3s;
 }
 header .content .logo img {
   height: 100%;
