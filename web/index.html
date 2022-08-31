@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/splide.min.css">
     <link rel="icon" type="image/x-icon" href="./imgs/favicon.png">
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <title>XYmale Barbershop</title>
@@ -72,6 +73,7 @@
         </div>
     </header>
     <main>
+
         <section class="hero full-width" id="hero">
             <div class="text">
                 <h1>XYmale Barbershop</h1>
@@ -79,6 +81,7 @@
             </div>
             <img class="bg" src="./imgs/hero.jpg" alt="hero background image">
         </section>
+
         <section class="about full-width" id="about">
             <div class="content regular-width">
 
@@ -108,14 +111,65 @@
             <img src="./imgs/barbershop icon 1.png" alt="background icon" class="bg-image left">
             <img src="./imgs/barbershop icon 2.png" alt="background icon" class="bg-image right">
         </section>
-        <section class="gallery regular-width" id="gallery"></section>
+
+        <section class="gallery full-width splide" id="gallery">
+            <h2>Gallery</h2>
+            <div class="separator"></div>
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="./imgs/gallery_1.jpg" alt="gallery image">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./imgs/gallery_2.jpg" alt="gallery image">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./imgs/gallery_3.jpg" alt="gallery image">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./imgs/gallery_4.jpg" alt="gallery image">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./imgs/gallery_5.jpg" alt="gallery image">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./imgs/gallery_6.jpg" alt="gallery image">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./imgs/gallery_7.jpg" alt="gallery image">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./imgs/gallery_8.jpg" alt="gallery image">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./imgs/gallery_9.jpg" alt="gallery image">
+                    </li>
+                </ul>
+          </div>
+        </section>
+
         <section class="prices regular-width" id="prices"></section>
+
         <section class="contact regular-width" id="contact"></section>
+
         <section class="testimonials regular-width" id="testimonials"></section>
+
     </main>
     <footer class="regular-width"></footer>
 
-    <!-- Alerts imports -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.all.min.js"></script>
+    <!-- Alerts -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.all.min.js"></script> -->
+    
+    <!-- Slider -->
+    <script src="./code/splide.min.js"></script>
+    <script>
+        var splide = new Splide( '.splide', {
+            type   : 'loop',
+            perPage: 3,
+            perMove: 1,
+        } );
+        
+        splide.mount();
+    </script>
 </body>
 </html>
