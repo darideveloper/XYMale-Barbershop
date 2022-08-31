@@ -1,0 +1,43 @@
+section.contact
+    position: relative
+    margin-top: 100px
+    height: 360px
+
+    .bg-wrapper
+        height: 100%
+        
+        img
+            filter: brightness(0.5)
+
+    form, fieldset
+        margin: 0
+        padding: 0
+        border: none
+
+    form
+        margin: 0 auto
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+
+        h2
+            color: $color-b
+            text-shadow: 2px 2px 6px $color-a
+            margin-top: 0
+
+        input
+            margin: 10px
+
+            &:not(.btn)
+                padding: 15px 20px
+                border: none
+                box-shadow: 2px 2px 6px rgba($color-a, 0)
+                transition-duration: $transition-duration
+                width: 250px
+
+                &:focus
+                    box-shadow: 2px 2px 6px $color-a
+
+    

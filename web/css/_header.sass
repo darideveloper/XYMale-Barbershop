@@ -52,14 +52,16 @@ header
 
                     a
                         margin-left: 15px
-                        padding: 5px
                         display: inline-block
                         font-size: 14px
-                        border-bottom: 2px solid rgba($color-c, 0)
                         transition-duration: $transition-duration
                         color: $color-b
 
-                        &:hover:not(.cta)
+                        &:not(.cta)
+                            padding: 5px
+                            border-bottom: 2px solid rgba($color-c, 0)
+
+                        &:hover
                             border-bottom: 2px solid $color-c
 
 

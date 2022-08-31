@@ -79,7 +79,9 @@
                 <h1>XYmale Barbershop</h1>
                 <a href="#contact" class="btn cta">Contact Us</a>
             </div>
-            <img class="bg" src="./imgs/hero.jpg" alt="hero background image">
+            <div class="bg-wrapper">
+                <img class="bg" src="./imgs/hero.jpg" alt="hero background image">
+            </div>
         </section>
 
         <section class="about full-width cards-section" id="about">
@@ -186,7 +188,20 @@
             <img src="./imgs/barbershop icon 4.png" alt="background icon" class="bg-image right">
         </section>
 
-        <section class="contact regular-width" id="contact"></section>
+        <section class="contact full-width" id="contact">
+            <div class="bg-wrapper">
+                <img src="./imgs/contact.png" alt="contact background image">
+            </div>
+            <form action="#" class="regular-width">
+                <h2>Contact Us</h2>
+                <div class="separator"></div>
+                <fieldset>
+                    <input type="text" name="name" id="name" placeholder="name" required>
+                    <input type="email" name="email" id="email" placeholder="email" required>
+                    <input type="submit" value="Submit" class="btn submit">
+                </fieldset>
+            </form>
+        </section>
 
         <section class="testimonials regular-width" id="testimonials"></section>
 
