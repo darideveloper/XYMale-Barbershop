@@ -202,6 +202,7 @@ section.hero {
 }
 section.hero .bg-wrapper {
   height: 620px;
+  align-items: flex-end;
 }
 section.hero .text {
   display: flex;
@@ -284,7 +285,6 @@ section.cards-section .bg-image.right {
 }
 
 section.gallery .splide__slide {
-  height: 400px;
   width: 33.33%;
   padding: 20px;
   display: flex;
