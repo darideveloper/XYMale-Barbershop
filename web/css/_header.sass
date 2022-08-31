@@ -1,43 +1,56 @@
-header.regular-width
-    margin-top: 20px
+header
     display: flex
     align-items: center
-    justify-content: space-between
+    justify-content: center
+    top: 0
+    left: 0
+    z-index: 1
+    background: rgba($color-a, 0.2)
+    height: 80px
+    position: fixed
+    width: 100%
+
+    .content
+        display: flex
+        align-items: center
+        justify-content: space-between
     
-    .logo
-        width: 150px
-        height: auto
-    
-        img
-            width: 100%
+        .logo
+            width: 150px
             height: auto
+        
+            img
+                width: 100%
+                height: auto
+                filter: invert(1)
 
-    nav
-        margin: 0
-        padding: 0
-
-        ul
+        nav
             margin: 0
             padding: 0
-            margin-left: 50px
-            display: flex
-            align-items: center
-            justify-content: center
 
-            li
-                list-style: none
+            ul
+                margin: 0
+                padding: 0
+                margin-left: 50px
+                display: flex
+                align-items: center
+                justify-content: center
 
-                a
-                    margin-left: 15px
-                    padding: 5px
-                    display: inline-block
-                    font-size: 18px
-                    border-bottom: 2px solid rgba($color-c, 0)
-                    transition-duration: $transition-duration
+                li
+                    list-style: none
 
-                    &:hover:not(.cta)
-                        border-bottom: 2px solid $color-c
+                    a
+                        margin-left: 15px
+                        padding: 5px
+                        display: inline-block
+                        font-size: 14px
+                        border-bottom: 2px solid rgba($color-c, 0)
+                        transition-duration: $transition-duration
+                        color: $color-b
+
+                        &:hover:not(.cta)
+                            border-bottom: 2px solid $color-c
 
 
-    button.btn.display
-        display: none
+        button.btn.display
+            display: none

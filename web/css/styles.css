@@ -53,8 +53,9 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6, .title {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Dancing Script", cursive;
   color: #000000;
+  font-weight: bold;
 }
 
 *:focus {
@@ -94,25 +95,37 @@ h1, h2, h3, h4, h5, h6, .title {
   background-color: #eec163;
 }
 
-header.regular-width {
-  margin-top: 20px;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.2);
+  height: 80px;
+  position: fixed;
+  width: 100%;
+}
+header .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header.regular-width .logo {
+header .content .logo {
   width: 150px;
   height: auto;
 }
-header.regular-width .logo img {
+header .content .logo img {
   width: 100%;
   height: auto;
+  filter: invert(1);
 }
-header.regular-width nav {
+header .content nav {
   margin: 0;
   padding: 0;
 }
-header.regular-width nav ul {
+header .content nav ul {
   margin: 0;
   padding: 0;
   margin-left: 50px;
@@ -120,22 +133,56 @@ header.regular-width nav ul {
   align-items: center;
   justify-content: center;
 }
-header.regular-width nav ul li {
+header .content nav ul li {
   list-style: none;
 }
-header.regular-width nav ul li a {
+header .content nav ul li a {
   margin-left: 15px;
   padding: 5px;
   display: inline-block;
-  font-size: 18px;
+  font-size: 14px;
   border-bottom: 2px solid rgba(238, 193, 99, 0);
   transition-duration: 0.3s;
+  color: #fff;
 }
-header.regular-width nav ul li a:hover:not(.cta) {
+header .content nav ul li a:hover:not(.cta) {
   border-bottom: 2px solid #eec163;
 }
-header.regular-width button.btn.display {
+header .content button.btn.display {
   display: none;
+}
+
+section.hero {
+  position: relative;
+}
+section.hero .bg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: grayscale(7);
+  opacity: 0.9;
+}
+section.hero .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+section.hero .text h1 {
+  font-size: 120px;
+  text-align: center;
+  color: #fff;
+  padding-top: 350px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+section.hero .text .btn {
+  margin: 0 auto;
+  display: inline-block;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
