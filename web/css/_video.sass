@@ -1,0 +1,47 @@
+.wrapper-video 
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 10
+    display: flex
+    align-items: center
+    justify-content: center
+    animation-name: video-opacity
+    animation-duration: 2s
+    animation-delay: 7s
+    animation-fill-mode: forwards
+    background-color: $color-b
+
+    video 
+        width: 100%
+        height: auto
+        
+        /* Responsive video */
+        .vertical 
+            width: auto
+            height: 100%
+            
+    /* Video logo sound button */
+    button 
+        position: fixed
+        bottom: 15px
+        left: 15px
+        border-radius: 100px
+        background-color: $color-c
+        border: none
+
+        img 
+            width: 30px
+            height: 30px
+            padding: 10px
+
+@keyframes video-opacity 
+  0% 
+    opacity: 1
+  99% 
+    opacity: 0
+  100% 
+    opacity: 0
+  

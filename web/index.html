@@ -74,6 +74,15 @@
     </header>
     <main>
 
+        <div class="wrapper-video">
+            <video id="logo-video" autoplay muted playsinline>
+                <source src="./video/intro.mp4" type="video/mp4">
+            </video>
+            <button id="active-sound">
+                <img src="./imgs/sound-on.svg" alt="sound icon" class="on">
+            </button>
+        </div>
+
         <section class="hero full-width" id="hero">
             <div class="text">
                 <h1>XYmale Barbershop</h1>
@@ -389,9 +398,10 @@
     </script>
 
     <!-- Vanilla code -->
-    <script src="./code/header.js"></script>
-    <script src="./code/gallery.js"></script>
-
+    <script src="./code/header.js" type="module"></script>
+    <script src="./code/gallery.js" type="module"></script>
+    <script src="./code/video.js" type="module"></script>
+    <script src="./code/loader.js" type="module"></script>
     <!-- Alerts -->
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.all.min.js"></script> -->
     
