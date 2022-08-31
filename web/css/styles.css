@@ -8,7 +8,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
-  font-family: "regular-font", sans-serif;
+  font-family: "Nunito", sans-serif;
+  color: #000000;
 }
 
 .wrapper-img {
@@ -38,7 +39,7 @@ p.small {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #000000;
 }
 
 .regular-width {
@@ -52,8 +53,8 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6, .title {
-  font-family: "title-font", cursive;
-  color: #fff;
+  font-family: "Cormorant Garamond", serif;
+  color: #000000;
 }
 
 *:focus {
@@ -70,6 +71,71 @@ h1, h2, h3, h4, h5, h6, .title {
 
 .btn {
   display: inline-block;
+}
+.btn.cta {
+  border: 3px solid #eec163;
+  border-radius: 100px;
+  padding: 10px 25px;
+  background-color: #eec163;
+  font-weight: bold;
+  color: #000000;
+  transition-duration: 0.3s;
+}
+.btn.cta:hover {
+  background-color: rgba(238, 193, 99, 0);
+  color: #eec163;
+}
+.btn.cta.phantom {
+  background-color: rgba(238, 193, 99, 0);
+  color: #eec163;
+}
+.btn.cta.phantom:hover {
+  color: #000000;
+  background-color: #eec163;
+}
+
+header.regular-width {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header.regular-width .logo {
+  width: 150px;
+  height: auto;
+}
+header.regular-width .logo img {
+  width: 100%;
+  height: auto;
+}
+header.regular-width nav {
+  margin: 0;
+  padding: 0;
+}
+header.regular-width nav ul {
+  margin: 0;
+  padding: 0;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header.regular-width nav ul li {
+  list-style: none;
+}
+header.regular-width nav ul li a {
+  margin-left: 15px;
+  padding: 5px;
+  display: inline-block;
+  font-size: 18px;
+  border-bottom: 2px solid rgba(238, 193, 99, 0);
+  transition-duration: 0.3s;
+}
+header.regular-width nav ul li a:hover:not(.cta) {
+  border-bottom: 2px solid #eec163;
+}
+header.regular-width button.btn.display {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

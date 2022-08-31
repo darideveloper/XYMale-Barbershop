@@ -1,8 +1,24 @@
 .btn
     display: inline-block
 
-    // &.cta
+    &.cta
+        border: 3px solid $color-c
+        border-radius: 100px
+        padding: 10px 25px
+        background-color: $color-c
+        font-weight: bold
+        color: $color-a
+        transition-duration: $transition-duration
 
-    //     &:hover
+        &:hover
+            background-color: rgba($color-c, 0)
+            color: $color-c
+        
+        &.phantom
+            background-color: rgba($color-c, 0)
+            color: $color-c
 
-    //     &:active
+            &:hover
+                color: $color-a
+                background-color: rgba($color-c, 1)
+
