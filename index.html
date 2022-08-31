@@ -195,14 +195,17 @@
             <div class="bg-wrapper">
                 <img src="./imgs/contact.png" alt="contact background image">
             </div>
-            <form action="#" class="regular-width">
+            <form action="https://darideveloper.pythonanywhere.com/contactforms-api/" method="post" class="regular-width">
                 <h2>Contact Us</h2>
                 <div class="separator"></div>
                 <fieldset>
                     <input type="text" name="name" id="name" placeholder="name" required>
                     <input type="email" name="email" id="email" placeholder="email" required>
                     <input type="submit" value="Submit" class="btn submit">
-                </fieldset>
+                </fieldset>    
+                <input type="hidden" name="user" id="user" value="xymale">
+                <input type="hidden" name="api_key" id="api_key" value="ynSfNr3ubw895ZXfR2TVeF5SRNYR2E">
+                <input type="hidden" name="redirect" id="redirect" value="https://darihernandez.github.io/XYMale-Barbershop/?thanks=true">
             </form>
         </section>
 
@@ -397,13 +400,13 @@
         splide_testimonials.mount();
     </script>
 
+    <!-- Alerts -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.all.min.js"></script>
+
     <!-- Vanilla code -->
     <script src="./code/header.js" type="module"></script>
     <script src="./code/gallery.js" type="module"></script>
     <script src="./code/video.js" type="module"></script>
     <script src="./code/loader.js" type="module"></script>
-    <!-- Alerts -->
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.all.min.js"></script> -->
-    
 </body>
 </html>

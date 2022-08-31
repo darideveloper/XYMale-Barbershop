@@ -1,6 +1,4 @@
-window.onload = () => show_alert()
-
-function show_alert () {
+export function show_alert () {
     const queryString = window.location.search
     const urlParams = new URLSearchParams(queryString)
     var thanks = urlParams.get('thanks')
@@ -11,5 +9,9 @@ function show_alert () {
 
         // Redirect
         window.location.href = "#header"
+
+        return true
     }
+
+    return false
 }

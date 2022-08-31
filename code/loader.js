@@ -1,5 +1,6 @@
 import {wrapper_video} from './video.js'
 import {set_gallery_height} from './gallery.js'
+import {show_alert} from './alerts.js'
 
 function sleep(s) {
     // Wait specific seconds
@@ -7,11 +8,18 @@ function sleep(s) {
 }
 
 window.onload = async function () {
+
+    // Show alerts
+    const thanks_altert = show_alert()
+    console.log (thanks_altert)
+
     // Update gallery height items
     set_gallery_height()
     
     // Hide video wrapper when animation is complete
-    await sleep (8)
+    if (! thanks_altert) {
+        await sleep (8)
+    }
     wrapper_video.classList.add ("hide")
 
 }
