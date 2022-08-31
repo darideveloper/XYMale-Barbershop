@@ -60,6 +60,11 @@ h1, h2, h3, h4, h5, h6, .title {
   font-weight: bold;
 }
 
+h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
 *:focus {
   outline: none;
 }
@@ -76,7 +81,7 @@ h1, h2, h3, h4, h5, h6, .title {
   display: inline-block;
 }
 .btn.cta {
-  border: 3px solid #eec163;
+  border: 2px solid #eec163;
   border-radius: 100px;
   padding: 10px 25px;
   background-color: #eec163;
@@ -104,8 +109,8 @@ header {
   top: 0;
   left: 0;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.2);
-  height: 80px;
+  background: rgba(0, 0, 0, 0.6);
+  height: 60px;
   position: fixed;
   width: 100%;
 }
@@ -115,12 +120,12 @@ header .content {
   justify-content: space-between;
 }
 header .content .logo {
-  width: 150px;
-  height: auto;
+  height: 60px;
+  width: auto;
 }
 header .content .logo img {
-  width: 100%;
-  height: auto;
+  height: 100%;
+  width: auto;
   filter: invert(1);
 }
 header .content nav {
@@ -172,12 +177,13 @@ section.hero .text {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-top: 350px;
+  padding-bottom: 160px;
 }
 section.hero .text h1 {
   font-size: 120px;
   text-align: center;
   color: #fff;
-  padding-top: 350px;
   padding-bottom: 30px;
   margin: 0;
 }
@@ -185,6 +191,52 @@ section.hero .text .btn {
   margin: 0 auto;
   display: inline-block;
   font-size: 20px;
+}
+
+section.about {
+  position: relative;
+  overflow: hidden;
+}
+section.about .content .separator {
+  margin: 0 auto;
+  width: 100px;
+  height: 5px;
+  background-color: #eec163;
+  border-radius: 100px;
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+section.about .content .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+section.about .content .cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+  text-align: center;
+}
+section.about .content .cards .card svg {
+  width: 40px;
+  height: 40px;
+}
+section.about .content .cards .card svg use {
+  fill: rgba(0, 0, 0, 0.8);
+}
+section.about .bg-image {
+  position: absolute;
+  top: 60px;
+  height: 300px;
+  width: auto;
+  opacity: 0.2;
+}
+section.about .bg-image.left {
+  left: -120px;
+}
+section.about .bg-image.right {
+  right: -120px;
 }
 
 /*# sourceMappingURL=styles.css.map */
