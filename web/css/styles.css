@@ -196,15 +196,16 @@ section.hero .text .btn {
   font-size: 20px;
 }
 
-section.about {
+section.cards-section {
   position: relative;
   overflow: hidden;
+  padding-bottom: 100px;
 }
-section.about .content .cards {
+section.cards-section .content .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-section.about .content .cards .card {
+section.cards-section .content .cards .card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -212,24 +213,46 @@ section.about .content .cards .card {
   padding: 15px;
   text-align: center;
 }
-section.about .content .cards .card svg {
+section.cards-section .content .cards .card:hover svg, section.cards-section .content .cards .card:hover .photo-wrapper {
+  transform: translateY(-10px);
+}
+section.cards-section .content .cards .card svg {
+  transition-duration: 0.3s;
   width: 40px;
   height: 40px;
 }
-section.about .content .cards .card svg use {
+section.cards-section .content .cards .card svg use {
   fill: rgba(0, 0, 0, 0.8);
 }
-section.about .bg-image {
+section.cards-section .content .cards .card .photo-wrapper {
+  transition-duration: 0.3s;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+section.cards-section .content .cards .card .photo-wrapper img {
+  width: 100%;
+  height: auto;
+}
+section.cards-section .content .cards .card p {
+  text-decoration: none;
+}
+section.cards-section .bg-image {
   position: absolute;
-  top: 60px;
+  top: 50%;
+  transform: translateY(-50%);
   height: 300px;
   width: auto;
   opacity: 0.2;
 }
-section.about .bg-image.left {
+section.cards-section .bg-image.left {
   left: -120px;
 }
-section.about .bg-image.right {
+section.cards-section .bg-image.right {
   right: -120px;
 }
 
