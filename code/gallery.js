@@ -1,15 +1,13 @@
 const gallery_items_selector = "section.gallery .splide__slide"
 const sheet = window.document.styleSheets[0];
-var is_mobile = false
-var height
 
 // Crate gallery sliders
 var splide_gallery = new Splide( '#gallery' )
 splide_gallery.mount ()
 
-export function set_gallery_height () {
-
-    let last_mobile_state = is_mobile
+export function update_gallery () {
+    let height
+    let is_mobile = false
 
     // Detect mopbile version of gallery
     if (window.matchMedia("(max-width: 800px)").matches) {
@@ -19,7 +17,6 @@ export function set_gallery_height () {
     }
 
     // Mount gallery
-    console.log (is_mobile)
     if (is_mobile) {
         splide_gallery.options = {
             type   : 'loop',

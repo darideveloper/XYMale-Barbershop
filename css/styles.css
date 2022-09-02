@@ -477,7 +477,7 @@ section.contact .bg-wrapper {
 section.contact .bg-wrapper img {
   filter: brightness(0.5);
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1050px) {
   section.contact .bg-wrapper img {
     height: 100%;
     width: auto;
@@ -559,6 +559,16 @@ section.testimonials .splide__slide blockquote header .metadata .name {
 section.testimonials .splide__slide blockquote header .metadata time {
   font-style: italic;
   font-size: 14px;
+}
+@media screen and (max-width: 670px) {
+  section.testimonials .splide__slide blockquote header {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  section.testimonials .splide__slide blockquote header img {
+    margin: 0;
+  }
 }
 section.testimonials button.splide__arrow {
   top: 65% !important;

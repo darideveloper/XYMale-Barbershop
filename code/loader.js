@@ -1,6 +1,7 @@
 import {wrapper_video} from './video.js'
-import {set_gallery_height} from './gallery.js'
+import {update_gallery} from './gallery.js'
 import {show_alert} from './alerts.js'
+import {update_testimonials} from './testimonials.js'
 
 function sleep(s) {
     // Wait specific seconds
@@ -12,8 +13,9 @@ window.onload = async function () {
     // Show alerts
     const thanks_altert = show_alert()
 
-    // Update gallery height items
-    set_gallery_height()
+    // Update sliders
+    update_gallery()
+    update_testimonials ()
     
     // Hide video wrapper when animation is complete
     if (! thanks_altert) {
@@ -24,6 +26,7 @@ window.onload = async function () {
 }
 
 window.onresize = function() {
-    // Update gallery height items
-    set_gallery_height()
+    // Update sliders
+    update_gallery()
+    update_testimonials ()
 }
