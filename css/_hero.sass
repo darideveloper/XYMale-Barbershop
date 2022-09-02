@@ -5,6 +5,11 @@ section.hero
         height: 620px
         align-items: flex-end
 
+        @media screen and (max-width: 1085px)
+            img
+                height: 100%
+                width: auto
+
     .text
         display: flex
         align-items: center
@@ -19,6 +24,19 @@ section.hero
             color: $color-b
             padding-bottom: 30px
             margin: 0
+            width: 90%
+
+        @media screen and (max-width: 1058px)
+            h1
+                font-size: 70px
+
+        @media screen and (max-width: 823px)
+            padding-top: 200px
+
+        @media screen and (max-width: 580px)
+            padding-top: 250px
+            h1
+                font-size: 50px
 
         .btn
             margin: 0 auto

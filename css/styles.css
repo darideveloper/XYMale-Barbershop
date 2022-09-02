@@ -316,6 +316,12 @@ section.hero .bg-wrapper {
   height: 620px;
   align-items: flex-end;
 }
+@media screen and (max-width: 1085px) {
+  section.hero .bg-wrapper img {
+    height: 100%;
+    width: auto;
+  }
+}
 section.hero .text {
   display: flex;
   align-items: center;
@@ -330,6 +336,25 @@ section.hero .text h1 {
   color: #fff;
   padding-bottom: 30px;
   margin: 0;
+  width: 90%;
+}
+@media screen and (max-width: 1058px) {
+  section.hero .text h1 {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 823px) {
+  section.hero .text {
+    padding-top: 200px;
+  }
+}
+@media screen and (max-width: 580px) {
+  section.hero .text {
+    padding-top: 250px;
+  }
+  section.hero .text h1 {
+    font-size: 50px;
+  }
 }
 section.hero .text .btn {
   margin: 0 auto;
