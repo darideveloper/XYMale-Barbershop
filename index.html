@@ -123,11 +123,14 @@
             <img src="./imgs/barbershop icon 2.png" alt="background icon" class="bg-image right">
         </section>
 
-        <section class="hide gallery full-width splide" id="gallery">
+        <section class="gallery full-width splide" id="gallery">
             <h2>Gallery</h2>
             <div class="separator"></div>
             <div class="splide__track">
                 <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="./imgs/gallery_1.jpg" alt="gallery image">
+                    </li>
                     <li class="splide__slide">
                         <img src="./imgs/gallery_2.jpg" alt="gallery image">
                     </li>
@@ -145,9 +148,6 @@
                     </li>
                     <li class="splide__slide">
                         <img src="./imgs/gallery_7.jpg" alt="gallery image">
-                    </li>
-                    <li class="splide__slide">
-                        <img src="./imgs/gallery_8.jpg" alt="gallery image">
                     </li>
                 </ul>
           </div>
@@ -383,13 +383,6 @@
     <!-- Slider -->
     <script src="./code/splide.min.js"></script>
     <script>
-        var splide_gallery = new Splide( '#gallery', {
-            type   : 'loop',
-            perPage: 3,
-            perMove: 1,
-        } );
-        
-        splide_gallery.mount();
 
         var splide_testimonials = new Splide( '#testimonials', {
             type   : 'loop',
