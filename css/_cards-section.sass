@@ -6,6 +6,20 @@ section.cards-section
         .cards
             display: grid
             grid-template-columns: repeat(3, 1fr)
+            align-items: flex-start
+
+            @media screen and (max-width: 650px)
+                grid-template-columns: repeat(1, 1fr)
+
+                .card
+                    width: 60%
+                    margin: 0 auto
+
+            @media screen and (max-width: 450px)
+                .card
+                    width: 80%
+
+
 
             .card
                 display: flex
@@ -45,6 +59,9 @@ section.cards-section
                     text-decoration: none
 
     .bg-image
+        @media screen and ( max-width: 1150px )
+            display: none
+            
         position: absolute
         top: calc(50%)
         transform: translateY(-50%)

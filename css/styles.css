@@ -370,6 +370,21 @@ section.cards-section {
 section.cards-section .content .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  align-items: flex-start;
+}
+@media screen and (max-width: 650px) {
+  section.cards-section .content .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section.cards-section .content .cards .card {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  section.cards-section .content .cards .card {
+    width: 80%;
+  }
 }
 section.cards-section .content .cards .card {
   display: flex;
@@ -414,6 +429,11 @@ section.cards-section .bg-image {
   height: 300px;
   width: auto;
   opacity: 0.2;
+}
+@media screen and (max-width: 1150px) {
+  section.cards-section .bg-image {
+    display: none;
+  }
 }
 section.cards-section .bg-image.left {
   left: -120px;
