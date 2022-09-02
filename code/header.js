@@ -1,9 +1,10 @@
-const header_nav = document.querySelector ("header nav")
-const header_btn = document.querySelector ("header .btn")
-const header = document.querySelector('header')
+
+const header_btn = document.querySelector ("#header .btn.display")
+const header = document.querySelector('#header')
 
 header_btn.addEventListener ("click", function (e) {
-    header_nav.classList.toggle ("open")
+    header.classList.toggle ("clossed")
+    console.log ("click")
 })
 
 // Update header when scroll
@@ -14,3 +15,4 @@ window.addEventListener ("scroll", function (e) {
         header.classList.add ("scroll")
     }
 })
+

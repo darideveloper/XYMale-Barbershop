@@ -1,3 +1,7 @@
+// TESTING
+main
+    height: 1000px
+    
 #header
     display: flex
     align-items: center
@@ -51,19 +55,62 @@
                     list-style: none
 
                     a
-                        margin-left: 15px
                         display: inline-block
                         font-size: 14px
                         transition-duration: $transition-duration
                         color: $color-b
 
                         &:not(.cta)
-                            padding: 5px
+                            padding: 15px
                             border-bottom: 2px solid rgba($color-c, 0)
+
+                        &.cta
+                            margin-left: 10px
 
                         &:hover
                             border-bottom: 2px solid $color-c
 
 
-        button.btn.display
+        .btn.display
             display: none
+
+    @media screen and (max-width: 800px)
+        height: 395px
+        align-items: flex-start
+
+        &.clossed, &.scroll
+            // Disable header resize on scroll
+            height: 85px 
+
+            .content
+                nav
+                    display: none
+
+                .btn.display
+                    transform: rotate(0deg)
+
+                // Disable logo resize on scroll
+                .logo
+                    height: 60px
+
+        .content
+            flex-direction: column
+            justify-content: center
+
+            nav ul
+                flex-direction: column
+                padding: 0
+                margin: 0
+
+                li a.cta
+                    margin-left: 0
+
+            .btn.display
+                transition-duration: 0.5s
+                display: inline-block
+                position: absolute
+                bottom: -14px
+                transform: rotate(180deg)
+
+            .logo
+                height: 60px
