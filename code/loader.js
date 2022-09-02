@@ -11,7 +11,6 @@ window.onload = async function () {
 
     // Show alerts
     const thanks_altert = show_alert()
-    console.log (thanks_altert)
 
     // Update gallery height items
     set_gallery_height()
