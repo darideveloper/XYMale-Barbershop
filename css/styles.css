@@ -456,6 +456,14 @@ section.gallery .splide__slide img {
 section.gallery button.splide__arrow {
   top: 65% !important;
 }
+@media screen and (max-width: 800px) {
+  section.gallery .splide__slide {
+    padding: 5px;
+  }
+  section.gallery button.splide__arrow {
+    top: 60% !important;
+  }
+}
 
 section.contact {
   position: relative;
